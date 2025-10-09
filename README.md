@@ -1,46 +1,107 @@
-ISRO Mission Dashboard
-This dashboard helps you explore ISRO's (Indian Space Research Organisation) fascinating space missions! It provides a clear, visual breakdown of key mission parameters, helping you understand India's journey into space.
+# 🚀 ISRO Rocket Launch Analytics & Forecasting
 
-Features
-Interactive Data Visualization: Explore missions through dynamic charts and graphs.
+**A Data Science project focused on analyzing and forecasting ISRO rocket missions — with insights on PSLV and GSLV vehicles, mission success probabilities, and reusability feasibility.**  
+Built using modern **Python analytics, machine learning, and visualization** techniques to support **cost optimization, mission planning, and strategic decision-making** in aerospace.
 
-Mission Clusters: Identify trends and typical mission profiles based on payload mass and cost.
+---
 
-Comprehensive Glossary: Understand key terms like Launch Vehicles, Orbits, and Mission Costs directly within the app.
+## 🌌 Project Overview
 
-Key Terms and Definitions
-This section provides a quick reference for the terms used in the dashboard.
+This project explores over **300 ISRO launch records**, performing **exploratory data analysis (EDA)**, **machine learning modeling**, and **interactive dashboarding** to:
 
-Launch Vehicles: PSLV and GSLV
-PSLV (Polar Satellite Launch Vehicle): ISRO's reliable workhorse, primarily used for launching satellites into Polar Orbits.
+- 📈 Forecast **mission costs** and **success probabilities**
+- 🛰️ Analyze **payload trends**, **launch sites**, and **mission types**
+- ♻️ Evaluate **reusability potential** for PSLV/GSLV rockets
+- 🎛️ Provide **real-time decision support** through an interactive **Streamlit dashboard**
 
-GSLV (Geosynchronous Satellite Launch Vehicle): ISRO's heavier lifter, designed to launch larger communication and weather satellites into higher Geosynchronous Transfer Orbits.
+---
 
-Payload Type
-The main purpose or function of a satellite or spacecraft. Examples include Communication, Earth Observation, Navigation, and Scientific.
+## 🧭 Methods & Workflow
 
-Payload Mass (kg)
-The total weight of the rocket's payload, measured in kilograms (kg).
+### 1. 📊 Data Collection & Preparation
+- Compiled 300+ ISRO mission records from public databases and media sources  
+- Features include: `launch_vehicle`, `payload_mass`, `mission_type`, `launch_cost`, `weather`, and `outcome`
+- Cleaned and standardized data using **Pandas**, **NumPy**, and **feature engineering** pipelines
 
-Mission Cost (INR Cr)
-The total expense of a mission in Indian Rupees Crores (INR Cr). One Crore is equal to 10 million.
+### 2. 🔍 Exploratory Data Analysis (EDA)
+- Visualized distributions and correlations using **Seaborn** and **Matplotlib**
+- Built **correlation heatmaps**, **time-series trends**, and **geospatial maps (Folium)**  
+- Identified key cost drivers and payload patterns over time
 
-Launch Site
-The physical location from where the rocket takes off. ISRO's primary sites are at the Satish Dhawan Space Centre (SDSC) SHAR on Sriharikota Island.
+### 3. 🤖 Statistical & Machine Learning Modeling
+Implemented end-to-end ML workflow using **scikit-learn** and **XGBoost**:
+- **Regression** → Forecast launch expenses  
+- **Classification** → Predict mission success  
+- **Clustering (K-Means)** → Segment launches by cost and mission profile  
+- **Explainability** → Feature importance analysis to interpret key factors
 
-Orbit Type
-The specific path a satellite follows around Earth. Examples include GTO, SSO, LEO, and Lunar Transfer Orbit.
+### 4. 🗺️ Interactive Visualization & Decision Support
+Developed a full-featured **Streamlit Dashboard** with:
+- Dynamic filters, search, and visualization panels  
+- **Plotly** charts, **Folium** maps, and **scenario simulation tools**  
+- Batch prediction interface and feature importance graphs  
+- Custom **dark-themed UI** for professional presentation
 
-Launch Outcome
-Indicates whether the mission was successful or not. Categories include Success, Partial Failure, and Failure.
+### 5. 🧩 Repository Structure & Version Control
+Organized with clarity and modularity:
 
-Mission Clusters
-Groups of missions identified based on similarities in their Payload Mass and Mission Cost, used to reveal trends in mission planning.
+Version-controlled via **Git & GitHub**, following best practices with `.gitignore` and detailed documentation.
 
-Technologies Used
-HTML: For the structure of the dashboard.
+---
 
-CSS: For styling and layout.
+## 🏆 Key Accomplishments
 
-JavaScript: For interactivity, data visualization, and dynamic content.
+✅ Built accurate forecasting models for launch cost and success prediction  
+✅ Created clustering-based segmentation to identify cost-efficient and reusable mission types  
+✅ Delivered explainable AI with feature ranking for transparent decision-making  
+✅ Designed an interactive dashboard enabling real-time analytics for mission planning  
+✅ Completed full data science lifecycle — from ingestion to deployment
+
+---
+
+## 🧠 Tech Stack
+
+| Category | Tools / Libraries |
+|-----------|------------------|
+| **Languages** | Python |
+| **Data Handling** | Pandas, NumPy |
+| **Visualization** | Matplotlib, Seaborn, Plotly, Folium |
+| **Modeling** | scikit-learn, XGBoost |
+| **Dashboarding** | Streamlit |
+| **Version Control** | Git, GitHub |
+| **Documentation** | Markdown, Jupyter Notebooks |
+
+---
+
+## 💻 Dashboard Preview
+
+🌐 **Interactive Features Include:**
+- Launch cost prediction simulator  
+- Mission success probability calculator  
+- Geospatial launch site visualization  
+- Clustering and feature importance plots  
+
+🖤 Custom-designed **dark theme** for a clean and modern look.
+
+---
+
+## 📚 Insights & Outcomes
+
+| Insight Type | Description |
+|---------------|-------------|
+| **Cost Drivers** | Payload mass, vehicle type, and mission complexity drive expenses |
+| **Success Factors** | Weather and payload characteristics strongly influence outcomes |
+| **Reusability Feasibility** | Identified optimal missions for potential reusable technology |
+| **Strategic Benefit** | Supports budget planning, R&D investment, and policy formulation |
+
+---
+
+## 🪐 Future Enhancements
+- Integrate **deep learning models (LSTM)** for time-based forecasting  
+- Add **real-time launch feed** via ISRO API (if available)  
+- Deploy dashboard on **Streamlit Cloud / Hugging Face Spaces**  
+- Include **international comparisons** with NASA & SpaceX datasets  
+
+---
+
 
