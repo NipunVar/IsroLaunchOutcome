@@ -1,0 +1,7 @@
+{
+    "total_disposable_cost_M": 1350.0,
+    "total_reusable_cost_M": 2650.0,
+    "total_savings_M": -1300.0,
+    "break_even_point_missions": 32,
+    "roi_strategic_insight": "The current cost model indicates that the RLV program does not achieve cost parity with disposable vehicles over 15 missions. Re-evaluation of refurbishment costs or mission frequency is required."
+}

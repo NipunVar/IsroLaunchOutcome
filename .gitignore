@@ -1,0 +1,49 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environment
+isro_launch_env/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (raw/processed, large files)
+*.csv
+*.pkl
+*.sqlite3
+*.db
+*.gz
+*.zip
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Python cache dirs
+*.pytest_cache/
+.cache/
+.pytest_cache/
+# Virtual Environment Folders
+venv/
+new_isro_venv/
