@@ -1,6 +1,6 @@
 {
-    "simulated_success_rate": 0.994,
-    "expected_net_value_M": 396.7,
+    "simulated_success_rate": 0.982,
+    "expected_net_value_M": 390.1,
     "value_at_risk_M": 400.0,
     "risk_insight": "The expected value is positive, and the 95% Value-at-Risk is within an acceptable range, suggesting high financial viability.",
     "n_trials": 500

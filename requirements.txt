@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pandas
 numpy
 scikit-learn
@@ -15,3 +16,13 @@ folium
 requests
 scipy
 python-multipart
+=======
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+joblib
+>>>>>>> 8c3916e829cb067336df532b11a3a5ab59a53f83
