@@ -302,7 +302,7 @@ st.sidebar.markdown("---")
 
 ALL_MENU_ITEMS = [
     "Project Overview", "Real-Time Predictions", "Strategic Financials", "Benchmarking",
-    "Launch Sites Map", "Feature Distributions", "Correlations", "Grouped Analysis",
+    "Feature Distributions", "Correlations", "Grouped Analysis",
     "Time Trends", "Raw Data Overview"
 ]
 
@@ -582,22 +582,6 @@ elif selected_menu == "Benchmarking":
         st.info(f"Placeholder chart used; run benchmarking_analysis.py to create '{benchmark_chart}'.")
 
 
-# -----------------------------------------------------------------
-# LAUNCH SITES MAP (render folium HTML directly)
-# -----------------------------------------------------------------
-elif selected_menu == "Launch Sites Map":
-    st.header("Launch Trajectory and Geospatial Risk Analysis")
-    map_file = 'geospatial_launch_map.html'
-    if os.path.exists(map_file):
-        try:
-            # Read the exact HTML Folium generated and render it directly.
-            raw_html = open(map_file, 'r', encoding='utf-8').read()
-            # Render the full HTML in an embedded frame. Use a big height for a full feel.
-            st.components.v1.html(raw_html, height=900, scrolling=True)
-        except Exception as e:
-            st.error(f"Could not render map: {e}")
-    else:
-        st.warning(f"Geospatial map file '{map_file}' not found. Run geospatial_analysis.py to generate it.")
 
 
 # -----------------------------------------------------------------
