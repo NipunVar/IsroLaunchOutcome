@@ -207,3 +207,8 @@ Version-controlled via **Git & GitHub**, following best practices with `.gitigno
 
 
 ---
+
+## 👥 Authors
+- Nipun Varshneya
+- Aastha Singh
+- Akshat Pal

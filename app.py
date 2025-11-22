@@ -340,6 +340,14 @@ Overall, the platform is designed to be reproducible and auditable: preprocessin
     top_vehicle = data['launch_vehicle'].mode()[0] if 'launch_vehicle' in data.columns else "N/A"
     colC.metric("Top Launch Vehicle", top_vehicle, "Most frequent in dataset")
 
+    st.markdown("""
+    ### **Authors**
+    - **Nipun Varshneya**
+    - **Aastha Singh**
+    - **Akshat Pal**
+    """)
+
+
 
 # -----------------------------------------------------------------
 # REAL-TIME PREDICTIONS
